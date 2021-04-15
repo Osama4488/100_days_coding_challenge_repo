@@ -5,5 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ADDING IMAGES -->
+
+    <img
+      src="images/quokka.jpg"
+      alt="A family of
+ quokka"
+      title="The quokka is an Australian
+ marsupial that is similar in size to the
+ domestic cat."
+    />
+
+    <!-- 
+    Where to Place Images
+in Your Code -->
+
+    <img src="images/bird.gif" alt="Bird" width="100" height="100" />
+    <p>
+      There are around 10,000 living species of birds that inhabit different
+      ecosystems from the Arctic to the Antarctic. Many species undertake long
+      distance annual migrations, and many more perform shorter irregular
+      journeys.
+    </p>
+    <hr />
+    <p>
+      <img src="images/bird.gif" alt="Bird" width="100" height="100" />There are
+      around 10,000 living species of birds that inhabit different ecosystems
+      from the Arctic to the Antarctic. Many species undertake long distance
+      annual migrations, and many more perform shorter irregular journeys.
+    </p>
+    <hr />
+    <p>
+      There are around 10,000 living species of birds that inhabit different
+      ecosystems from the Arctic to the Antarctic.<img
+        src="images/bird.gif"
+        alt="Bird"
+        width="100"
+        height="100"
+      />Many species undertake long distance annual migrations, and many more
+      perform shorter irregular journeys.
+    </p>
+
+    <!-- Aligning images -->
+    <p>
+      <img
+        src="images/bird.gif"
+        alt="Bird"
+        width="100"
+        height="100"
+        align="left"
+      />There are around 10,000 living species of birds that inhabit different
+      ecosystems from the Arctic to the Antarctic. Many species undertake long
+      distance annual migrations, and many more perform shorter irregular
+      journeys.
+    </p>
+    <hr />
+    <p>
+      <img
+        src="images/bird.gif"
+        alt="Bird"
+        width="100"
+        height="100"
+        align="right"
+      />There are around 10,000 living species of birds that inhabit different
+      ecosystems from the Arctic to the Antarctic. Many species undertake long
+      distance annual migrations, and many more perform shorter irregular
+      journeys.
+    </p>
+
+    <!-- Basic Table Structure -->
+
+    <table>
+      <tr>
+        <td>15</td>
+        <td>15</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>60</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>90</td>
+        <td>90</td>
+      </tr>
+    </table>
+
+    <!-- LONG TABLES -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Income</th>
+          <th>Expenditure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1st January</th>
+          <td>250</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <th>2nd January</th>
+          <td>285</td>
+          <td>48</td>
+        </tr>
+        <!-- additional rows as above -->
+        <tr>
+          <th>31st January</th>
+          <td>129</td>
+          <td>64</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>7824</td>
+          <td>1241</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- FORM StruCTURE -->
+
+    <form action="http://www.example.com/subscribe.php" method="get">
+      <p>This is where the form controls will appear.</p>
+    </form>
+
+    <!-- CHECK BOX -->
+
+    <form action="http://www.example.com/profile.php">
+      <p>
+        Please select your favorite music service(s):
+        <br />
+        <input
+          type="checkbox"
+          name="service"
+          value="itunes"
+          checked="checked"
+        />
+        iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+      </p>
+    </form>
+
+    <!-- DROP DOWN -->
+
+    <form action="http://www.example.com/profile.php">
+      <p>What device do you listen to music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+    </form>
+
+    <!-- FILE INPUT BOX -->
+
+    <form action="http://www.example.com/upload.php" method="post">
+      <p>Upload your song in MP3 format:</p>
+      <input type="file" name="user-song" /><br />
+      <input type="submit" value="Upload" />
+    </form>
+
+
+     <!-- Form Validatio -->
+     <form action="http://www.example.com/login/"
+ method="post">
+<label for="username">Username:</label>
+<input type="text" name="username"
+ required="required" /></title><br />
+<label for="password">Password:</label>
+<input type="password" name="password"
+ required="required" />
+<input type="submit" value="Submit" />
+</form>
+  </body>
 </html>

@@ -616,5 +616,161 @@ border: 1px solid #665544;
 overflow: auto;
 width: 100%;}
 
+
+
+<!-- FIXED WIDTH LAYOUT -->
+body {
+width: 960px;
+margin: 0 auto;}
+#content {
+overflow: auto;
+height: 100%;}
+#nav, #feature, #footer {
+background-color: #efefef;
+padding: 10px;
+margin: 10px;}
+.column1, .column2, .column3 {
+background-color: #efefef;
+width: 300px;
+float: left;
+margin: 10px;}
+li {
+display: inline;
+padding: 5px;}
+
+
+<!-- LIQUID LAYOUT -->
+
+body {
+width: 90%;
+margin: 0 auto;}
+#content {overflow: auto;}
+#nav, #feature, #footer {
+margin: 1%;}
+.column1, .column2, .column3 {
+width: 31.3%;
+float: left;
+margin: 1%;}
+.column3 {margin-right: 0%;}
+li {
+display: inline;
+padding: 0.5em;}
+#nav, #footer {
+background-color: #efefef;
+padding: 0.5em 0;}
+#feature, .article {
+height: 10em;
+margin-bottom: 1em;
+background-color: #efefef;}
+
+
+<!-- A GRID BASED LAYOUT USING 960.GS -->
+
+<!-- <head>
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css"
+ href="css/960_12_col.css" />
+ <style>See the right hand page</style>
+</head>
+<body>
+<div class="container_12 clearfix">
+ <div id="header" class="grid_12">
+ <h1>Logo</h1>
+ <div id="nav">
+ <ul>
+ <li><a href="">Home</a></li>
+ <li><a href="">Products</a></li>
+ <li><a href="">Services</a></li>
+ <li><a href="">About</a></li>
+ <li><a href="">Contact</a></li>
+ </ul>
+ </div>
+ </div>
+ <div id="feature" class="grid_12">
+ <p>Feature</p>
+ </div>
+ <div class="article grid_4">
+ <p>Column One</p>
+ </div>
+ <div class="article grid_4">
+ <p>Column Two</p>
+ </div>
+ <div class="article grid_4">
+ <p>Column Three</p>
+ </div>
+ <div id="footer" class="grid_12">
+ <p>&copy; Copyright 2011</p>
+ </div>
+</div><  .container_12 
+</body> -->
+
+
+
+
+<!-- ALIGNING  IMAGES USING CSS -->
+
+<!-- img.align-left {
+float: left;
+margin-right: 10px;}
+img.align-right {
+float: right;
+margin-left: 10px;}
+img.medium {
+width: 250px;
+height: 250px;} -->
+
+<!-- CenterinG IMAGES USING CSS -->
+
+<!-- img.align-center {
+display: block;
+margin: 0px auto;}
+img.medium {
+width: 250px;
+height: 250px;} -->
+
+
+<!-- Repeating Images
+background-repeat
+background-attacHhment -->
+
+<!-- body {
+background-image: url("images/header.gif");
+background-repeat: repeat-x;} -->
+
+
+<!-- Linking Around
+BloCK LEVEL ELEMENTS -->
+
+<a href="introduction.html">
+<article>
+ <figure>
+ <img src="images/bok-choi.jpg"
+ alt="Bok Choi" />
+ <figcaption>Bok Choi</figcaption>
+ </figure>
+ <hgroup>
+ <h2>Japanese Vegetarian</h2>
+ <h3>Five week course in London</h3>
+ </hgroup>
+ <p>A five week introduction to traditional
+ Japanese vegetarian meals, teaching you a
+ selection of rice and noodle dishes.</p>
+</article>
+</a>
+
+<!-- Helping Older
+Browsers Understand -->
+
+<!-- header, section, footer, aside, nav, article, figure
+{
+display: block;}
+
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/
+ trunk/html5.js"></script>
+<![endif]-->
+
+
   </body>
 </html>

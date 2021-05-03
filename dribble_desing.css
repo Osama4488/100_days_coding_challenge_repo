@@ -293,6 +293,7 @@ header {
 }
 
 .privacy-section {
+  width: 1140px;
   /* background-color: green; */
 }
 
@@ -424,6 +425,9 @@ header nav ul {
   }
   .text-cta-right-container button {
     padding: 8 10;
+  }
+  .cta-section {
+    width: 1124px;
   }
 }
 

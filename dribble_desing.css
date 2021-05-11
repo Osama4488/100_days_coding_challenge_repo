@@ -474,6 +474,7 @@ header nav ul {
 .footer-right-container {
   padding-top: 20px;
 }
+
 .footer-container {
   display: flex;
   padding-bottom: 100px;
@@ -503,6 +504,12 @@ header nav ul {
   }
   .footer-left-container {
     width: 100%;
+  }
+
+  .footer-right-container nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .footer-right-container {

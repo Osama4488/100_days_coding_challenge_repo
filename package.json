@@ -1,0 +1,14 @@
+{
+  "name": "demo_repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Osama4488/demo_repo.git",
+  "author": "Osama4488 <syed.osama.ali.96@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "scss": "node-sass -w scss -o css"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

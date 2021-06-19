@@ -1,0 +1,25 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "some description!",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.9.2",
+    "node-sass": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o dribble.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osama4488/demo_repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Osama4488/demo_repo/issues"
+  },
+  "homepage": "https://github.com/Osama4488/demo_repo#readme"
+}

@@ -1,0 +1,95 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  line-height: 1.2em;
+}
+
+.portfolio__container .sidenav {
+  height: 100%;
+  width: 283px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 100;
+  background-color: #f2f3f7;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolio__container .sidenav img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+.portfolio__container .sidenav h1 {
+  text-align: right;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0.5em;
+  display: block;
+}
+.portfolio__container .sidenav span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.portfolio__container .sidenav span a {
+  color: #2c98f0;
+  outline: none;
+  text-decoration: none !important;
+}
+.portfolio__container .sidenav span p {
+  margin-left: 5px;
+  padding: 0;
+}
+.portfolio__container .sidenav nav ul {
+  padding: 0;
+  margin: 0;
+}
+.portfolio__container .sidenav nav ul li {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  font-family: "Quicksand", Arial, sans-serif;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.portfolio__container .sidenav nav ul li:hover {
+  color: #2c98f0;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+.portfolio__container .sidenav p {
+  padding: 0px 20px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=portfolio.css.map */

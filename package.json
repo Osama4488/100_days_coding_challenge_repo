@@ -1,25 +1,14 @@
 {
-  "name": "package.json",
+  "name": "demo_repo",
   "version": "1.0.0",
-  "description": "some description!",
   "main": "index.js",
-  "dependencies": {
-    "bulma": "^0.9.2",
-    "node-sass": "^6.0.0"
-  },
-  "devDependencies": {},
+  "repository": "https://github.com/Osama4488/demo_repo.git",
+  "author": "Osama4488 <syed.osama.ali.96@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o dribble.css"
+    "scss": "sass scss/:css/ --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Osama4488/demo_repo.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Osama4488/demo_repo/issues"
-  },
-  "homepage": "https://github.com/Osama4488/demo_repo#readme"
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
 }

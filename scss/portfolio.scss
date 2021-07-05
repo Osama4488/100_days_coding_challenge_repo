@@ -8,6 +8,11 @@ p {
 
   line-height: 1.2em;
 }
+@media only screen and (max-width: 600px) {
+  p {
+    text-align: center;
+  }
+}
 a {
   color: #2c98f0;
 }
@@ -17,6 +22,14 @@ h2 {
 
   font-weight: 400;
   margin: 0 0 30px 0;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+}
+h1 {
+  line-height: 1.2em;
 }
 
 .portfolio {
@@ -110,6 +123,12 @@ h2 {
       }
     }
 
+    @media only screen and (max-width: 600px) {
+      .sidenav {
+        display: none;
+      }
+    }
+
     .hero__section {
       width: calc(100% - 370px);
       float: right;
@@ -156,6 +175,20 @@ h2 {
           }
         }
       }
+      @media only screen and (max-width: 600px) {
+        &__desc {
+          h1 {
+            text-align: center;
+            font-size: 56px;
+          }
+          h2 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
       &__features {
         padding: 10em 2.5em 2em;
         span {
@@ -184,6 +217,7 @@ h2 {
         .row {
           display: flex;
           justify-content: space-between;
+
           &__wrapper {
             background-color: #fff;
 
@@ -197,6 +231,19 @@ h2 {
               font-size: 16px;
               font-weight: 500;
             }
+          }
+          @media only screen and (max-width: 600px) {
+            &__wrapper {
+              width: 90%;
+              text-align: center;
+              // padding: 0px 20px;
+              padding: 15px;
+            }
+          }
+        }
+        @media only screen and (max-width: 600px) {
+          .row {
+            flex-direction: column;
           }
         }
       }
@@ -218,6 +265,16 @@ h2 {
           text-decoration: none;
         }
       }
+      @media only screen and (max-width: 600px) {
+        &__cta {
+          a {
+            display: block;
+            text-align: center;
+            margin: auto;
+          }
+        }
+      }
+
       &__services {
         padding: 6em 2.5em 2em;
         span {
@@ -283,7 +340,116 @@ h2 {
               margin-top: 14px;
             }
           }
+          @media only screen and (max-width: 600px) {
+            .services__wrapper {
+              width: 80%;
+            }
+          }
         }
+        @media only screen and (max-width: 600px) {
+          .flex__container__services {
+            flex-direction: column;
+          }
+        }
+      }
+      &__counter {
+        margin: 0 40px;
+        // background-image: url("images/xcover_bg_1.jpg.pagespeed.ic.qP4siTb4Tv.webp");
+        padding: 3em 0;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        background-image: url("https://wallpaperaccess.com/full/1209710.jpg");
+        opacity: 0.9;
+        display: flex;
+        justify-content: space-around;
+        .row {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &__num {
+            font-size: 40px;
+
+            color: #fff;
+            font-family: "Quicksand", Arial, sans-serif;
+
+            font-weight: 700;
+            margin-bottom: 0.3em;
+          }
+          @media only screen and (max-width: 600px) {
+            &__num {
+              color: #000;
+            }
+          }
+          &__desc {
+            // color: rgba(255, 255, 255, 0.7);
+            color: #fff;
+            max-width: 150px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 5px;
+            margin-bottom: 2em;
+            text-align: center;
+            line-height: 2em;
+          }
+          @media only screen and (max-width: 600px) {
+            &__desc {
+              color: #000;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        &__counter {
+          flex-direction: column;
+        }
+      }
+
+      &__skills {
+        padding: 10em 2.5em 2em;
+        span {
+          margin-bottom: 15px;
+          display: block;
+          font-size: 10px;
+          text-transform: uppercase;
+          color: #999999;
+          font-weight: 500;
+          letter-spacing: 5px;
+        }
+        h2 {
+          font-size: 18px;
+          margin-bottom: 4em;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          line-height: 1.8;
+          position: relative;
+        }
+        p {
+          color: #999999;
+          margin-bottom: 1.5em;
+          line-height: 1.5em;
+        }
+        .progress-wrap {
+          h3 {
+            font-size: 16px;
+            font-family: "Quicksand", Arial, sans-serif;
+            margin-bottom: 10px;
+          }
+          .progress {
+            height: 6px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: #f2f3f7;
+            overflow: visible;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .hero__section {
+        width: 100%;
+        float: none;
       }
     }
   }

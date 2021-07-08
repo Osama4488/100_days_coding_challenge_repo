@@ -27,6 +27,9 @@ h2 {
   h2 {
     text-align: center;
   }
+  span {
+    text-align: center;
+  }
 }
 h1 {
   line-height: 1.2em;
@@ -588,7 +591,20 @@ h1 {
               max-width: 224px;
             }
           }
+          @media only screen and (max-width: 600px) {
+            .card__wrapper {
+              width: 100%;
+            }
+          }
         }
+        @media only screen and (max-width: 600px) {
+          .blog__container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
         button {
           padding: 15px;
           background: #2c98f0;
@@ -597,6 +613,7 @@ h1 {
           width: 80%;
         }
       }
+
       &__contact {
         padding: 10em 2.5em 2em;
         span {
@@ -622,9 +639,73 @@ h1 {
           display: flex;
           .flex__inner__wrapper {
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .flex_col_container {
+              display: flex;
+              margin-bottom: 20px;
+              align-items: center;
+              .img__wrapper {
+                width: 100px;
+                height: 100px;
+                display: table;
+                text-align: center;
+                background: #f2f3f7;
+                i {
+                  position: relative;
+                  top: 0;
+                  left: 0;
+                }
+              }
+              div {
+                p {
+                  margin-left: 30px;
+                  color: #2c98f0;
+                }
+              }
+            }
           }
           .form__wrapper {
             width: 50%;
+            .form-group {
+              margin-bottom: 15px;
+              button {
+                background: #2c98f0;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+              }
+              .form-control {
+                width: 80%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: transparent;
+                border: transparent;
+                background: #f2f3f7;
+                height: 54px;
+                font-size: 16px;
+                font-weight: 400;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                border-radius: 0;
+                textarea {
+                  height: 130px;
+                }
+              }
+            }
+          }
+        }
+        @media only screen and (max-width: 600px) {
+          .flex__container {
+            flex-direction: column;
           }
         }
       }
